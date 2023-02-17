@@ -1,5 +1,5 @@
 :root {
-  --dark: #374151;
+  --dark: #443850;
   --darker: #1f2937;
   --darkest: #111827;
   --light: #eee;
@@ -109,6 +109,12 @@ main {
   margin-bottom: 1rem;
 }
 
+img {
+  display: none;
+  width: 25px;
+  min-height: 25px;
+}
+
 #tasks .task .content {
   flex: 1 1 0%;
 }
@@ -154,5 +160,9 @@ main {
 }
 
 .task .actions .delete {
+  color: #ec4899;
+}
+
+.task .actions .check {
   color: #ec4899;
 }

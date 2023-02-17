@@ -41,8 +41,18 @@ window.addEventListener("load", () => {
     task_delete_el.classList.add("delete");
     task_delete_el.innerHTML = "Delete";
 
+    const task_check_el = document.createElement("button");
+    task_check_el.classList.add("check");
+    task_check_el.innerHTML = "check";
+
+    const task_img_el = document.createElement("img");
+    task_img_el.classList.add("img");
+    task_img_el.src = "check-mark.png";
+
     task_actions_el.appendChild(task_edit_el);
     task_actions_el.appendChild(task_delete_el);
+    task_actions_el.appendChild(task_check_el);
+    task_actions_el.appendChild(task_img_el);
 
     task_el.appendChild(task_actions_el);
 
@@ -63,6 +73,19 @@ window.addEventListener("load", () => {
 
     task_delete_el.addEventListener("click", () => {
       list_el.removeChild(task_el);
+    });
+
+    task_check_el.addEventListener("click", () => {
+      if (
+        task_check_el.innerText.toLocaleLowerCase() == "check" ||
+        task_check_el.checked == true
+      ) {
+        task_img_el.style.display = "block";
+        task_check_el.innerText = "Completed";
+      } else {
+        task_img_el.style.display = "none";
+        task_check_el.innerText = "Check";
+      }
     });
   });
 });
