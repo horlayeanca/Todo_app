@@ -14,6 +14,51 @@
     />
   </head>
   <body>
+    <div class="background">
+      <header>
+        <form action="" id="new-task">
+          <h1>My Todo List 2023</h1>
+          &nbsp;&nbsp;
+          <input
+            type="text"
+            id="new-task-input"
+            placeholder="what is your plan for today?"
+          />
+          <input type="submit" id="submit-task" value="Add task" />
+        </form>
+      </header>
+
+      <main>
+        <section class="task-list">
+          <h2>Tasks</h2>
+
+          <div id="tasks">
+            <!--
+          <div class="task">
+            <div class="content">
+              <input type="text" class="text" value="My task" readonly />
+            </div>
+            <div class="actions">
+              <button class="edit">Edit</button>
+              <button class="delete">Delete</button>
+              <button class="check">check</button>
+              <img src='check-mark.png' alt='check' id='myCheck'>
+            </div>
+          </div>
+          --></div>
+        </section>
+      </main>
+    </div>
+    <button class="theme-toggle--button" aria-label="Toggle Theme">
+      <span class="shape moon"></span>
+      <span class="rays--container">
+        <span class="ray"></span>
+        <span class="ray"></span>
+        <span class="ray"></span>
+        <span class="ray"></span>
+      </span>
+    </button>
+
     <header>
       <form action="" id="new-task">
         <h1>My Todo List 2023</h1>
@@ -33,22 +78,20 @@
 
         <div id="tasks">
           <!--
-          <div class="task">
-            <div class="content">
-              <input type="text" class="text" value="My task" readonly />
-            </div>
-            <div class="actions">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-              <button class="check">check</button>
-              <img src='check-mark.png' alt='check' id='myCheck'>
-            </div>
+        <div class="task">
+          <div class="content">
+            <input type="text" class="text" value="My task" readonly />
           </div>
-          -->
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button>
+            <button class="check">check</button>
+            <img src='check-mark.png' alt='check' id='myCheck'>
+          </div>
         </div>
+        --></div>
       </section>
     </main>
-
     <script src="index.js"></script>
   </body>
 </html>
