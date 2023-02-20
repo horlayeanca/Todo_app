@@ -6,6 +6,7 @@
   --pink: #ec4899;
   --purple: #8b5cf6;
   --gray: #6b7280;
+  --licorice: #f5e9e2;
 }
 
 * {
@@ -22,6 +23,9 @@
   color: var(--darkest);
 }
 
+#date {
+  color: var(--licorice);
+}
 .dark-theme {
   --dark: #dcd3e5;
   --darker: #eaf0ce;
@@ -30,6 +34,7 @@
   --pink: #ec4899;
   --purple: #8b5cf6;
   --gray: #6b7280;
+  --licorice: #0b0014;
 }
 
 body {
