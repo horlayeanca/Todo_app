@@ -15,6 +15,13 @@ window.addEventListener("load", () => {
     }
   };
 
+  function time() {
+    let d = new Date();
+    document.getElementById("date").innerHTML = d.toLocaleString();
+    setInterval(time, 1000);
+  }
+  time();
+
   form.addEventListener("submit", (e) => {
     e.preventDefault();
 

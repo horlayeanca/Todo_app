@@ -14,6 +14,14 @@
   font-family: raleway;
 }
 
+.theme {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem;
+  align-items: center;
+  color: var(--darkest);
+}
+
 .dark-theme {
   --dark: #dcd3e5;
   --darker: #eaf0ce;
