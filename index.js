@@ -3,23 +3,17 @@ window.addEventListener("load", () => {
   const input = document.querySelector("#new-task-input");
   const list_el = document.querySelector("#tasks");
 
-  let isThemeDark = false;
+  let icon = document.getElementById("icon");
 
-  const toggleBtnEl = document.querySelector(".theme-toggle--button");
+  icon.onclick = function () {
+    document.body.classList.toggle("dark-theme");
 
-  const backgroundEl = document.querySelector(".background");
-
-  const shapeEl = document.querySelector(".shape");
-
-  toggleBtnEl.addEventListener("click", toggleTheme);
-
-  function toggleTheme() {
-    isThemeDark = !isThemeDark;
-    const replacedClass = isThemeDark ? "moon" : "sun";
-    const replacedWithClass = isThemeDark ? "sun" : "moon";
-    shapeEl.classList.replace(replacedClass, replacedWithClass);
-    backgroundEl.classList.toggle("dark");
-  }
+    if (document.body.classList.contains("dark-theme")) {
+      icon.src = "moon.png";
+    } else {
+      icon.src = "sun.png";
+    }
+  };
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
